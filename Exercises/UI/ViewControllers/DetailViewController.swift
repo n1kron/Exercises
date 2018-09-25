@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SRCountdownTimer
 
 class DetailViewController: UIViewController {
     @IBOutlet weak var gifImageView: UIImageView!
@@ -17,6 +18,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var repetitionLabel: UILabel!
     @IBOutlet weak var startView: StartView!
     @IBOutlet weak var finishView: FinishView!
+    @IBOutlet weak var circleTimer: SRCountdownTimer!
     
     var timer:Timer!
     var startCount = 0
@@ -29,6 +31,9 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         gifImageView.loadGif(name: currentPack[startCount])
         exerciseTitle.text = currentTitle
+        circleTimer.lineColor = .gray
+        circleTimer.lineWidth = 4.0
+        circleTimer.isLabelHidden = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -59,7 +64,9 @@ class DetailViewController: UIViewController {
             progressView.isHidden = true
             repetitionLabel.isHidden = true
             timeToRestLabel.isHidden = false
+            circleTimer.isHidden = false
             restLabel.isHidden = false
+            circleTimer.start(beginingValue: 15, interval: 1)
             timer = Timer(timeInterval: 1.0, target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: true)
             RunLoop.current.add(timer!, forMode: RunLoopMode.commonModes)
         } else {
@@ -82,6 +89,7 @@ class DetailViewController: UIViewController {
         gifImageView.isHidden = false
         progressView.isHidden = false
         repetitionLabel.isHidden = false
+        circleTimer.isHidden = true
         timeToRestLabel.isHidden = true
         restLabel.isHidden = true
         restLabel.text = "00:15"

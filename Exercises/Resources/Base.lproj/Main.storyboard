@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ckh-su-VMb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qd-SN-rIM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -155,7 +155,7 @@
                                                     <color key="shadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <size key="shadowOffset" width="-2" height="-1"/>
                                                     <variation key="heightClass=regular-widthClass=regular">
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ExerciseTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="v0Q-eZ-Vil">
@@ -166,7 +166,7 @@
                                                     <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <size key="shadowOffset" width="-3" height="-2"/>
                                                     <variation key="heightClass=regular-widthClass=regular">
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="45"/>
                                                     </variation>
                                                 </label>
                                                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzu-ci-Y5a" customClass="LGButton" customModule="LGButton">
@@ -181,7 +181,7 @@
                                                             <real key="value" value="30"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
-                                                            <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="START"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
@@ -239,16 +239,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmh-gf-CBg">
                                 <rect key="frame" x="0.0" y="20" width="375" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50w-GV-w4P">
-                                        <rect key="frame" x="130" y="10" width="115.5" height="30"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 days fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="50w-GV-w4P">
+                                        <rect key="frame" x="20" y="4" width="335" height="42"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="50w-GV-w4P" firstAttribute="centerX" secondItem="mmh-gf-CBg" secondAttribute="centerX" id="Ovh-en-cGt"/>
                                     <constraint firstItem="50w-GV-w4P" firstAttribute="centerY" secondItem="mmh-gf-CBg" secondAttribute="centerY" id="Pe1-h8-CWk"/>
+                                    <constraint firstItem="50w-GV-w4P" firstAttribute="leading" secondItem="mmh-gf-CBg" secondAttribute="leading" constant="20" id="SC6-J6-6mK"/>
+                                    <constraint firstAttribute="trailing" secondItem="50w-GV-w4P" secondAttribute="trailing" constant="20" id="cFL-oj-kPD"/>
                                     <constraint firstAttribute="height" constant="50" id="nXa-rn-qTB"/>
                                 </constraints>
                             </view>
@@ -322,10 +327,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ExerciseTitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="noJ-QS-sWy">
                                 <rect key="frame" x="92.5" y="54" width="190" height="37"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
-                                <color key="textColor" red="0.47843137254901957" green="0.50588235294117645" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl2-eQ-VoB">
@@ -338,8 +343,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaH-Gl-Ssw">
                                 <rect key="frame" x="0.0" y="100" width="375" height="467"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Repetition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQD-1W-9tY">
-                                        <rect key="frame" x="15" y="390.5" width="345" height="61.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Repetition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gQD-1W-9tY">
+                                        <rect key="frame" x="15" y="390.5" width="345" height="76.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="53"/>
                                         <color key="textColor" red="0.47843137250000001" green="0.50588235290000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -363,41 +368,53 @@
                                         <color key="progressTintColor" red="0.47843137250000001" green="0.50588235290000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="trackTintColor" red="1" green="0.39959327979999998" blue="0.59430606929999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to Rest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlc-mc-wEQ">
-                                        <rect key="frame" x="81.5" y="165.5" width="212" height="42"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
-                                        </variation>
-                                    </label>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-yM-aFe">
-                                        <rect key="frame" x="143.5" y="212.5" width="88" height="42"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
-                                        </variation>
-                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pc2-Dd-a1z" customClass="SRCountdownTimer" customModule="SRCountdownTimer">
+                                        <rect key="frame" x="47.5" y="70" width="280" height="280"/>
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to Rest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlc-mc-wEQ">
+                                                <rect key="frame" x="34" y="105" width="212" height="42"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
+                                                </variation>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-yM-aFe">
+                                                <rect key="frame" x="96" y="147" width="88" height="42"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Daq-yM-aFe" firstAttribute="centerY" secondItem="pc2-Dd-a1z" secondAttribute="centerY" multiplier="1.2" id="B9p-Ft-cdF"/>
+                                            <constraint firstItem="Daq-yM-aFe" firstAttribute="centerX" secondItem="pc2-Dd-a1z" secondAttribute="centerX" id="QbJ-n7-VsF"/>
+                                            <constraint firstItem="hlc-mc-wEQ" firstAttribute="centerX" secondItem="pc2-Dd-a1z" secondAttribute="centerX" id="Ska-ba-okj"/>
+                                            <constraint firstItem="hlc-mc-wEQ" firstAttribute="centerY" secondItem="pc2-Dd-a1z" secondAttribute="centerY" multiplier="0.9" id="bgC-pc-mQm"/>
+                                            <constraint firstAttribute="width" secondItem="pc2-Dd-a1z" secondAttribute="height" multiplier="1:1" id="de5-Zt-6HF"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gQD-1W-9tY" firstAttribute="leading" secondItem="IaH-Gl-Ssw" secondAttribute="leading" constant="15" id="0Jo-fu-9xq"/>
+                                    <constraint firstItem="pc2-Dd-a1z" firstAttribute="height" secondItem="IaH-Gl-Ssw" secondAttribute="height" multiplier="0.6" id="CpJ-cC-sY9"/>
                                     <constraint firstItem="g2S-wC-mO5" firstAttribute="leading" secondItem="IaH-Gl-Ssw" secondAttribute="leading" constant="8" id="MV1-Xf-1d8"/>
                                     <constraint firstAttribute="trailing" secondItem="g2S-wC-mO5" secondAttribute="trailing" constant="8" id="UR1-VI-qiE"/>
                                     <constraint firstItem="g2S-wC-mO5" firstAttribute="top" secondItem="USP-cr-obl" secondAttribute="bottom" constant="20" id="UrJ-M3-uKp"/>
                                     <constraint firstAttribute="trailing" secondItem="gQD-1W-9tY" secondAttribute="trailing" constant="15" id="aip-98-8Wb"/>
-                                    <constraint firstAttribute="bottom" secondItem="gQD-1W-9tY" secondAttribute="bottom" constant="15" id="caN-nD-guh"/>
-                                    <constraint firstItem="hlc-mc-wEQ" firstAttribute="centerX" secondItem="IaH-Gl-Ssw" secondAttribute="centerX" id="e8G-bj-kHb"/>
+                                    <constraint firstAttribute="bottom" secondItem="gQD-1W-9tY" secondAttribute="bottom" id="caN-nD-guh"/>
                                     <constraint firstItem="USP-cr-obl" firstAttribute="centerX" secondItem="IaH-Gl-Ssw" secondAttribute="centerX" id="gou-Ew-etN"/>
+                                    <constraint firstItem="pc2-Dd-a1z" firstAttribute="centerX" secondItem="IaH-Gl-Ssw" secondAttribute="centerX" id="hNv-2o-W2H"/>
                                     <constraint firstItem="gQD-1W-9tY" firstAttribute="centerX" secondItem="IaH-Gl-Ssw" secondAttribute="centerX" id="oKV-tp-k0i"/>
+                                    <constraint firstItem="pc2-Dd-a1z" firstAttribute="centerY" secondItem="IaH-Gl-Ssw" secondAttribute="centerY" multiplier="0.9" id="oia-JQ-elv"/>
                                     <constraint firstItem="USP-cr-obl" firstAttribute="centerY" secondItem="IaH-Gl-Ssw" secondAttribute="centerY" multiplier="0.8" id="qJk-5o-mGD"/>
                                     <constraint firstItem="gQD-1W-9tY" firstAttribute="top" secondItem="g2S-wC-mO5" secondAttribute="bottom" constant="5" id="rEH-Rw-GGZ"/>
-                                    <constraint firstItem="Daq-yM-aFe" firstAttribute="top" secondItem="hlc-mc-wEQ" secondAttribute="bottom" constant="5" id="vJJ-KF-aM0"/>
-                                    <constraint firstItem="Daq-yM-aFe" firstAttribute="centerY" secondItem="IaH-Gl-Ssw" secondAttribute="centerY" id="vQb-HA-Y1x"/>
                                     <constraint firstItem="USP-cr-obl" firstAttribute="width" secondItem="IaH-Gl-Ssw" secondAttribute="width" multiplier="0.9" id="xQe-jW-FLm"/>
-                                    <constraint firstItem="Daq-yM-aFe" firstAttribute="centerX" secondItem="IaH-Gl-Ssw" secondAttribute="centerX" id="yNv-qj-nhV"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -420,6 +437,7 @@
                         <viewLayoutGuide key="safeArea" id="hB7-IN-6pd"/>
                     </view>
                     <connections>
+                        <outlet property="circleTimer" destination="pc2-Dd-a1z" id="l63-VW-YLe"/>
                         <outlet property="exerciseTitle" destination="noJ-QS-sWy" id="kTB-lg-yCv"/>
                         <outlet property="finishView" destination="17M-fA-NXI" id="hJO-XQ-iFj"/>
                         <outlet property="gifImageView" destination="USP-cr-obl" id="RYZ-w1-57k"/>
@@ -446,7 +464,7 @@
                             <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             <size key="shadowOffset" width="0.0" height="3"/>
                             <variation key="heightClass=regular-widthClass=regular">
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="70"/>
                             </variation>
                         </label>
                     </subviews>
@@ -512,27 +530,42 @@
                             </connections>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations your workout is complete!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ww1-qn-zAi">
-                            <rect key="frame" x="20" y="86" width="304" height="63"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                            <rect key="frame" x="20" y="78" width="304" height="79.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                             <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             <size key="shadowOffset" width="0.0" height="3"/>
                             <variation key="heightClass=regular-widthClass=regular">
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="39"/>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do these exercises every day to get results!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tSh-BQ-dPL">
+                            <rect key="frame" x="20" y="225" width="304" height="79.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <size key="shadowOffset" width="0.0" height="3"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="39"/>
                             </variation>
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.47843137250000001" green="0.50588235290000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="tSh-BQ-dPL" firstAttribute="centerY" secondItem="17M-fA-NXI" secondAttribute="centerY" multiplier="0.9" id="09z-4E-q8z"/>
                         <constraint firstAttribute="trailing" secondItem="ww1-qn-zAi" secondAttribute="trailing" constant="20" id="51h-hA-9aY"/>
                         <constraint firstItem="ww1-qn-zAi" firstAttribute="centerY" secondItem="17M-fA-NXI" secondAttribute="centerY" multiplier="0.4" id="9aS-7h-oCJ"/>
                         <constraint firstAttribute="bottom" secondItem="hgg-S5-RoT" secondAttribute="bottom" id="AYP-bi-0YF"/>
                         <constraint firstItem="TIk-sI-GOI" firstAttribute="centerY" secondItem="17M-fA-NXI" secondAttribute="centerY" multiplier="1.7" id="Grd-Hl-UIt"/>
+                        <constraint firstAttribute="trailing" secondItem="tSh-BQ-dPL" secondAttribute="trailing" constant="20" id="OaR-2k-3we"/>
                         <constraint firstItem="gUf-9b-FcS" firstAttribute="trailing" secondItem="hgg-S5-RoT" secondAttribute="trailing" id="Pee-bP-OAd"/>
                         <constraint firstItem="ww1-qn-zAi" firstAttribute="centerX" secondItem="17M-fA-NXI" secondAttribute="centerX" id="SXH-yP-rm4"/>
                         <constraint firstItem="TIk-sI-GOI" firstAttribute="leading" secondItem="gUf-9b-FcS" secondAttribute="leading" constant="20" id="TTf-dg-WCT"/>
                         <constraint firstItem="TIk-sI-GOI" firstAttribute="centerX" secondItem="17M-fA-NXI" secondAttribute="centerX" id="We2-Fr-geU"/>
+                        <constraint firstItem="tSh-BQ-dPL" firstAttribute="leading" secondItem="17M-fA-NXI" secondAttribute="leading" constant="20" id="e8j-yK-JrV"/>
+                        <constraint firstItem="tSh-BQ-dPL" firstAttribute="centerX" secondItem="17M-fA-NXI" secondAttribute="centerX" id="hLS-xP-sos"/>
                         <constraint firstItem="gUf-9b-FcS" firstAttribute="trailing" secondItem="TIk-sI-GOI" secondAttribute="trailing" constant="20" id="u51-hF-cDv"/>
                         <constraint firstItem="ww1-qn-zAi" firstAttribute="leading" secondItem="17M-fA-NXI" secondAttribute="leading" constant="20" id="vE7-r9-nrR"/>
                         <constraint firstItem="hgg-S5-RoT" firstAttribute="leading" secondItem="gUf-9b-FcS" secondAttribute="leading" id="y8Q-hn-MQO"/>
@@ -565,67 +598,8 @@
             </objects>
             <point key="canvasLocation" x="170" y="34"/>
         </scene>
-        <!--Onboarding View Controller-->
-        <scene sceneID="ZIk-dz-eNC">
-            <objects>
-                <viewController id="Ckh-su-VMb" customClass="OnboardingViewController" customModule="Exercises" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xu3-ku-D4H">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6OS-y4-8WZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elh-gn-54Z">
-                                <rect key="frame" x="0.0" y="400" width="375" height="267"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outlet property="delegate" destination="Ckh-su-VMb" id="BDw-pK-49a"/>
-                                    <outletCollection property="gestureRecognizers" destination="zA0-bO-dZd" appends="YES" id="h8P-US-1fE"/>
-                                </connections>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="Elh-gn-54Z" firstAttribute="leading" secondItem="Xu3-ku-D4H" secondAttribute="leading" id="1Gn-Rw-igl"/>
-                            <constraint firstItem="6OS-y4-8WZ" firstAttribute="top" secondItem="Xu3-ku-D4H" secondAttribute="top" id="4av-lp-JbJ"/>
-                            <constraint firstItem="6OS-y4-8WZ" firstAttribute="trailing" secondItem="UEO-LJ-Aub" secondAttribute="trailing" id="9dR-rT-J7E"/>
-                            <constraint firstAttribute="bottom" secondItem="Elh-gn-54Z" secondAttribute="bottom" id="Gw4-W8-lA4"/>
-                            <constraint firstItem="6OS-y4-8WZ" firstAttribute="leading" secondItem="UEO-LJ-Aub" secondAttribute="leading" id="eC5-oW-UBv"/>
-                            <constraint firstItem="Elh-gn-54Z" firstAttribute="height" secondItem="Xu3-ku-D4H" secondAttribute="height" multiplier="1:2.5" id="exw-W0-CwD"/>
-                            <constraint firstAttribute="bottom" secondItem="6OS-y4-8WZ" secondAttribute="bottom" id="g82-fr-cY7"/>
-                            <constraint firstAttribute="trailing" secondItem="Elh-gn-54Z" secondAttribute="trailing" id="zDl-7W-Jgp"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="UEO-LJ-Aub"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="c4o-cE-KQJ" appends="YES" id="jBf-nn-LAS"/>
-                        </connections>
-                    </view>
-                    <connections>
-                        <outlet property="backgroundImageView" destination="6OS-y4-8WZ" id="Mle-f9-PyH"/>
-                        <outlet property="contentScrollView" destination="Elh-gn-54Z" id="plc-gY-0Zm"/>
-                        <segue destination="9qd-SN-rIM" kind="presentation" identifier="GoApp" id="F8x-X0-KtC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LoI-cN-BgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="c4o-cE-KQJ">
-                    <connections>
-                        <action selector="handlePanWithRecognizer:" destination="Ckh-su-VMb" id="d1m-X2-eS7"/>
-                    </connections>
-                </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="zA0-bO-dZd">
-                    <connections>
-                        <action selector="handlePanWithRecognizer:" destination="Ckh-su-VMb" id="x7Y-hN-UPm"/>
-                    </connections>
-                </panGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-807" y="34"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="background" width="2048" height="2732"/>
         <image name="cross" width="75" height="75"/>
         <image name="exercises" width="60" height="60"/>
         <image name="finish" width="720" height="1280"/>

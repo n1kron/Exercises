@@ -1,16 +1,20 @@
 PODS:
   - LGButton (1.0.5)
+  - SRCountdownTimer (1.1)
 
 DEPENDENCIES:
   - LGButton
+  - SRCountdownTimer
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - LGButton
+    - SRCountdownTimer
 
 SPEC CHECKSUMS:
   LGButton: 707ce916eb80b73a6c4688df34bee11adbafb663
+  SRCountdownTimer: 9c92e444b5403c92f01dd6610299b8c634bc8562
 
-PODFILE CHECKSUM: 09dee0dac0c26d3b8b4add53ef452c9a75f3c2ec
+PODFILE CHECKSUM: c3b292d5583ec780d7e3307b9b81f5c4ed2bddee
 
 COCOAPODS: 1.5.3
