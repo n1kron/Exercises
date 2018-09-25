@@ -23,6 +23,7 @@ class ExercisesViewController: UIViewController {
                 if let ex = sender as? Int {
                     nextViewController.currentPack = Consts.Exercises.all[ex]
                     nextViewController.currentTitle = Consts.Exercises.exercisesNames[ex]
+                    nextViewController.startBackgroundImage = "splash\(ex+1)"
                 }
             }
         }
@@ -41,14 +42,16 @@ extension ExercisesViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ExercisesCollectionViewCell", for: indexPath) as! ExercisesCollectionViewCell
+        cell.backgroundImage.image = UIImage(named: "splash\(indexPath.row + 1)")
         cell.exerciseTitle.text = Consts.Exercises.exercisesNames[indexPath.row]
+        cell.motivationTitle.text = Consts.Exercises.motivationTexts[indexPath.row]
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: UIScreen.main.bounds.size.width * 0.9 , height: UIScreen.main.bounds.size.height * 0.7)
+        return CGSize(width: UIScreen.main.bounds.size.width * 0.9 , height: UIScreen.main.bounds.size.height * 0.77)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -23,8 +23,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     var coeffTransform : CGFloat = 2.8
     var originTop : CGFloat = -168.5
     var top : CGFloat = 50
-    let textHeaderLabel = Utiles().getPrefferedLocale() == Locale(identifier: "ru-US") ? ["ВЫБИРАЙТЕ", "ЧИТАЙТЕ", "СЛЕДИТЕ"] : ["CHOOSE", "READ", "TRACK"]
-    let textLitleLabel = Utiles().getPrefferedLocale() == Locale(identifier: "ru-US") ? ["Книги на любой вкус", "Со смартфона в дороге или на планшете дома", "За подборками нашей редакции"] : ["Favorite books", "With a iPhone on the road or on the iPad at home", "For the compilations of our editorial staff"]
+    
+    let textHeaderLabel = Utiles().getPrefferedLocale() == Locale(identifier: "ru-US") ? ["ВЫБИРАЙТЕ", "МОТИВИРУЙТЕСЬ", "СЛЕДИТЕ"] : ["CHOOSE", "MOTIVATE", "TRACK"]
+    let textLitleLabel = Utiles().getPrefferedLocale() == Locale(identifier: "ru-US") ? ["Упражнения на определённые группы мышц", "На новые свершения!", "За своим здоровьем"] : ["Exercises for certain muscle groups", "On new achievements!", "For your health"]
     var textButton = Utiles().getPrefferedLocale() == Locale(identifier: "ru-US") ? ["ДАЛЕЕ", "ДАЛЕЕ", "НАЧАТЬ"] : ["NEXT", "NEXT", "START"]
     
     let countContentViews = 3

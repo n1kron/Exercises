@@ -10,6 +10,8 @@ import UIKit
 
 class StartView: UIView {
     @IBOutlet weak var centerLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     var timeCount:Int = 4
     var timer:Timer!
     
@@ -17,6 +19,7 @@ class StartView: UIView {
         if timer != nil {
             timer.invalidate()
         }
+        backgroundImage.contentMode = .scaleAspectFill
         
         timer = Timer(timeInterval: 1.0, target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)

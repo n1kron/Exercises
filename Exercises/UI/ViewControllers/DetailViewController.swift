@@ -23,6 +23,7 @@ class DetailViewController: UIViewController {
     var timeCount: Int = 15
     var currentPack: [String] = []
     var currentTitle = ""
+    var startBackgroundImage = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         startView.frame.size = view.frame.size
+        startView.backgroundImage.image = UIImage(named: startBackgroundImage)
         finishView.delegate = self
         finishView.frame.size = view.frame.size
         finishView.alpha = 0.0

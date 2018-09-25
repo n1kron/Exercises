@@ -23,7 +23,11 @@ class SettingsViewController: UIViewController {
         if #available( iOS 10.3,*){
             SKStoreReviewController.requestReview()
         } else {
-            UIApplication.shared.open(URL(string: "")!, options: [:], completionHandler: nil) // update this
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(URL(string: "")!, options: [:], completionHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            } // update this
         }
     }
     

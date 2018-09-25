@@ -10,10 +10,15 @@ import UIKit
 
 class ExercisesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var exerciseTitle: UILabel!
+    @IBOutlet weak var motivationTitle: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.layer.cornerRadius = 10.0
-        self.layer.masksToBounds = true
+        backgroundImage.contentMode = .scaleAspectFill
+        
+        layer.cornerRadius = 10.0
+        layer.masksToBounds = true
+
     }
 }

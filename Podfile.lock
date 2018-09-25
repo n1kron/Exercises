@@ -1,0 +1,16 @@
+PODS:
+  - LGButton (1.0.5)
+
+DEPENDENCIES:
+  - LGButton
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LGButton
+
+SPEC CHECKSUMS:
+  LGButton: 707ce916eb80b73a6c4688df34bee11adbafb663
+
+PODFILE CHECKSUM: 09dee0dac0c26d3b8b4add53ef452c9a75f3c2ec
+
+COCOAPODS: 1.5.3
