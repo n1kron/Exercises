@@ -12,7 +12,7 @@ import StoreKit
 class Utiles {
     
     static func share(from viewController: UIViewController) {
-        let shareText = "" // add this shit
+        let shareText = "https://itunes.apple.com/us/app/30-days-fitness/id1437295755?l=ru&ls=1&mt=8"
         let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: [])
         viewController.present(vc, animated: true)
     }

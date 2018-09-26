@@ -31,7 +31,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         gifImageView.loadGif(name: currentPack[startCount])
         exerciseTitle.text = currentTitle
-        circleTimer.lineColor = .gray
+        circleTimer.lineColor = UIColor(red: 255/255, green: 102/255, blue: 152/255, alpha: 1.0)
         circleTimer.lineWidth = 4.0
         circleTimer.isLabelHidden = true
     }

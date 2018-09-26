@@ -45,13 +45,20 @@ extension ExercisesViewController: UICollectionViewDelegate, UICollectionViewDat
         cell.backgroundImage.image = UIImage(named: "splash\(indexPath.row + 1)")
         cell.exerciseTitle.text = Consts.Exercises.exercisesNames[indexPath.row]
         cell.motivationTitle.text = Consts.Exercises.motivationTexts[indexPath.row]
+        if indexPath.row <= 1 {
+            cell.difficultyImage.image = UIImage(named: "low-level")
+        } else if indexPath.row <= 3 {
+            cell.difficultyImage.image = UIImage(named: "medium-level")
+        } else {
+            cell.difficultyImage.image = UIImage(named: "hard-level")
+        }
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: UIScreen.main.bounds.size.width * 0.9 , height: UIScreen.main.bounds.size.height * 0.77)
+        return Consts.isIpad ? CGSize(width: UIScreen.main.bounds.size.width * 0.9 , height: UIScreen.main.bounds.size.height * 0.85) : CGSize(width: UIScreen.main.bounds.size.width * 0.9 , height: UIScreen.main.bounds.size.height * 0.77)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
