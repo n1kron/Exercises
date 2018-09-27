@@ -36,7 +36,7 @@ extension ExercisesViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(10, 10, 10, 10)
+        return Consts.isIpad ? UIEdgeInsetsMake(10, 20, 10, 20) : UIEdgeInsetsMake(10, 10, 10, 10)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
