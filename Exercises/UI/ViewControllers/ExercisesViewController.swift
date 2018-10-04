@@ -24,6 +24,7 @@ class ExercisesViewController: UIViewController {
                     nextViewController.currentPack = Consts.Exercises.all[ex]
                     nextViewController.currentTitle = Consts.Exercises.exercisesNames[ex]
                     nextViewController.startBackgroundImage = "splash\(ex+1)"
+                    nextViewController.indexOfPack = ex
                 }
             }
         }

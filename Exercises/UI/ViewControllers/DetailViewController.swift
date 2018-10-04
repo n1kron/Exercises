@@ -23,6 +23,7 @@ class DetailViewController: UIViewController {
     var timer:Timer!
     var startCount = 0
     var timeCount: Int = 15
+    var indexOfPack = 0
     var currentPack: [String] = []
     var currentTitle = ""
     var startBackgroundImage = ""
@@ -53,6 +54,7 @@ class DetailViewController: UIViewController {
     @IBAction func nextAction(_ sender: Any) {
         if !gifImageView.isHidden {
             if startCount == currentPack.count - 1 {
+                finishView.caloriesLabel.text = "Burned calories: \(Consts.calories[indexOfPack])"
                 view.addSubview(finishView)
                 UIView.animate(withDuration: 0.25) { [weak self] in
                     self?.finishView.alpha = 1.0

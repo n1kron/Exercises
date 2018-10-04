@@ -13,7 +13,7 @@ protocol FinishDelegate: class {
 }
 
 class FinishView: UIView {
-    @IBOutlet weak var finishLabel: UILabel!
+    @IBOutlet weak var caloriesLabel: UILabel!
     weak var delegate: FinishDelegate?
     
     @IBAction func continueAction(_ sender: UIButton) {

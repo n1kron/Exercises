@@ -12,6 +12,8 @@ class Consts {
     
     static let isIpad: Bool = UIDevice.current.userInterfaceIdiom == .pad
     
+    static let calories: [Int] = [14, 15, 17, 20, 19, 22]
+    
     struct Exercises {
         static let firstExercise = ["alp", "velo" , "lunge-right", "lunge-left"]
         static let secondExercise = ["wall", "lunge-up" , "press", "plank"]
