@@ -52,6 +52,13 @@
 		99AF52EE2152B87D000E798E /* 6-5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 99AF52E92152B87D000E798E /* 6-5.gif */; };
 		99AF52F021542150000E798E /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AF52EF21542150000E798E /* FinishView.swift */; };
 		99FE58152163D5B4006CA0E9 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE58142163D5B4006CA0E9 /* InformationViewController.swift */; };
+		99FE581A21663263006CA0E9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FE581921663263006CA0E9 /* HealthKit.framework */; };
+		99FE581C21663304006CA0E9 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE581B21663304006CA0E9 /* HealthKitSetupAssistant.swift */; };
+		99FE581F216783B1006CA0E9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE581E216783B1006CA0E9 /* ProfileViewController.swift */; };
+		99FE58212167846E006CA0E9 /* UserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE58202167846E006CA0E9 /* UserHealthProfile.swift */; };
+		99FE582321678B48006CA0E9 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE582221678B48006CA0E9 /* ProfileDataStore.swift */; };
+		99FE582621678BDB006CA0E9 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE582421678BDB006CA0E9 /* HKBiologicalSex+StringRepresentation.swift */; };
+		99FE582721678BDB006CA0E9 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FE582521678BDB006CA0E9 /* HKBloodType+StringRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +133,13 @@
 		99AF52E92152B87D000E798E /* 6-5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "6-5.gif"; sourceTree = "<group>"; };
 		99AF52EF21542150000E798E /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
 		99FE58142163D5B4006CA0E9 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		99FE581921663263006CA0E9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		99FE581B21663304006CA0E9 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
+		99FE581E216783B1006CA0E9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		99FE58202167846E006CA0E9 /* UserHealthProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserHealthProfile.swift; sourceTree = "<group>"; };
+		99FE582221678B48006CA0E9 /* ProfileDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		99FE582421678BDB006CA0E9 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
+		99FE582521678BDB006CA0E9 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99257BCD215AAA7C003D69B3 /* SRCountdownTimer.framework in Frameworks */,
+				99FE581A21663263006CA0E9 /* HealthKit.framework in Frameworks */,
 				99257BCB215A8AE6003D69B3 /* LGButton.framework in Frameworks */,
 				29856924754D97BF01704C41 /* Pods_Exercises.framework in Frameworks */,
 			);
@@ -241,6 +256,7 @@
 		992D8AC6214FA4ED0059628E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				99FE581D216782FA006CA0E9 /* HealthKit */,
 				992D8AC9214FCE4B0059628E /* Utiles.swift */,
 				99AF52AF215269D5000E798E /* Consts.swift */,
 			);
@@ -263,6 +279,7 @@
 			children = (
 				992D8ACD214FD2420059628E /* SettingsViewController.swift */,
 				992D8ACB214FD21C0059628E /* ExercisesViewController.swift */,
+				99FE581E216783B1006CA0E9 /* ProfileViewController.swift */,
 				992D8AD3214FED020059628E /* DetailViewController.swift */,
 				99FE58142163D5B4006CA0E9 /* InformationViewController.swift */,
 			);
@@ -350,9 +367,22 @@
 			path = sixth;
 			sourceTree = "<group>";
 		};
+		99FE581D216782FA006CA0E9 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				99FE581B21663304006CA0E9 /* HealthKitSetupAssistant.swift */,
+				99FE582221678B48006CA0E9 /* ProfileDataStore.swift */,
+				99FE582421678BDB006CA0E9 /* HKBiologicalSex+StringRepresentation.swift */,
+				99FE582521678BDB006CA0E9 /* HKBloodType+StringRepresentation.swift */,
+				99FE58202167846E006CA0E9 /* UserHealthProfile.swift */,
+			);
+			path = HealthKit;
+			sourceTree = "<group>";
+		};
 		EAD8BFCACC6B63D2897639D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99FE581921663263006CA0E9 /* HealthKit.framework */,
 				99257BCC215AAA7C003D69B3 /* SRCountdownTimer.framework */,
 				99257BCA215A8AE6003D69B3 /* LGButton.framework */,
 				8120E44871E1D315F1D81915 /* Pods_Exercises.framework */,
@@ -432,7 +462,7 @@
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -565,8 +595,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FE58212167846E006CA0E9 /* UserHealthProfile.swift in Sources */,
+				99FE582321678B48006CA0E9 /* ProfileDataStore.swift in Sources */,
+				99FE582621678BDB006CA0E9 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
 				99AF52AB21525A35000E798E /* Gifs.swift in Sources */,
 				99FE58152163D5B4006CA0E9 /* InformationViewController.swift in Sources */,
+				99FE582721678BDB006CA0E9 /* HKBloodType+StringRepresentation.swift in Sources */,
 				99AF52B0215269D5000E798E /* Consts.swift in Sources */,
 				992D8ACA214FCE4B0059628E /* Utiles.swift in Sources */,
 				992D8AD4214FED020059628E /* DetailViewController.swift in Sources */,
@@ -574,6 +608,8 @@
 				99AF52A921511E22000E798E /* StartView.swift in Sources */,
 				992D8A97214FA4320059628E /* AppDelegate.swift in Sources */,
 				992D8ACC214FD21C0059628E /* ExercisesViewController.swift in Sources */,
+				99FE581C21663304006CA0E9 /* HealthKitSetupAssistant.swift in Sources */,
+				99FE581F216783B1006CA0E9 /* ProfileViewController.swift in Sources */,
 				99AF52F021542150000E798E /* FinishView.swift in Sources */,
 				992D8ACE214FD2420059628E /* SettingsViewController.swift in Sources */,
 			);
@@ -749,10 +785,11 @@
 			baseConfigurationReference = 0F835CF7D0DFF3212C8F465E /* Pods-Exercises.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Exercises/Exercises.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = Exercises/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -769,10 +806,11 @@
 			baseConfigurationReference = 4A547F03107EAE3CE76C60A1 /* Pods-Exercises.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Exercises/Exercises.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = Exercises/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
