@@ -238,7 +238,7 @@ We strongly recommend to warm up before exercise for some time. We are not respo
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hb6-96-Ok9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="1140.1799100449775"/>
+            <point key="canvasLocation" x="711" y="1175"/>
         </scene>
         <!--Settings-->
         <scene sceneID="8Tq-Wc-ba1">
@@ -860,14 +860,110 @@ We strongly recommend to warm up before exercise for some time. We are not respo
                     </tabBar>
                     <connections>
                         <segue destination="RWa-n7-v18" kind="relationship" relationship="viewControllers" id="RKr-JE-HLV"/>
-                        <segue destination="qz2-v2-fUN" kind="relationship" relationship="viewControllers" id="4ax-hO-F1G"/>
-                        <segue destination="h2G-Vn-P4Q" kind="relationship" relationship="viewControllers" id="9dZ-gy-S2g"/>
-                        <segue destination="cWv-Pl-48s" kind="relationship" relationship="viewControllers" id="7Z2-j8-QQW"/>
+                        <segue destination="KL2-AD-Jip" kind="relationship" relationship="viewControllers" id="nPc-gE-zLK"/>
+                        <segue destination="qz2-v2-fUN" kind="relationship" relationship="viewControllers" id="xbz-aE-f0N"/>
+                        <segue destination="h2G-Vn-P4Q" kind="relationship" relationship="viewControllers" id="keA-Rk-S66"/>
+                        <segue destination="cWv-Pl-48s" kind="relationship" relationship="viewControllers" id="F76-Wv-Qfe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKc-60-h60" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="170" y="34"/>
+        </scene>
+        <!--Diet-->
+        <scene sceneID="ijw-h9-GZq">
+            <objects>
+                <viewController id="KL2-AD-Jip" customClass="DietViewController" customModule="Exercises" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z76-v9-0iB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wTZ-JA-tFi">
+                                <rect key="frame" x="5" y="30" width="365" height="29"/>
+                                <segments>
+                                    <segment title="MON"/>
+                                    <segment title="TUE"/>
+                                    <segment title="WED"/>
+                                    <segment title="THU"/>
+                                    <segment title="FRI"/>
+                                    <segment title="SAT"/>
+                                    <segment title="SUN"/>
+                                </segments>
+                                <color key="tintColor" red="0.47843137250000001" green="0.50588235290000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentDaysAction:" destination="KL2-AD-Jip" eventType="valueChanged" id="Cny-YG-lPZ"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tae-qB-aUG">
+                                <rect key="frame" x="0.0" y="66" width="375" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DietTableViewCell" rowHeight="131" id="SVh-o1-7O2" customClass="DietTableViewCell" customModule="Exercises" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="131"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SVh-o1-7O2" id="hBQ-g2-Yp3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iJb-z1-gby">
+                                                    <rect key="frame" x="5" y="5" width="365" height="84"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="J2n-1x-TF5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJa-OV-OFa">
+                                                    <rect key="frame" x="10" y="99" width="355" height="21.5"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iJb-z1-gby" firstAttribute="leading" secondItem="hBQ-g2-Yp3" secondAttribute="leading" constant="5" id="77J-c1-IGn"/>
+                                                <constraint firstItem="mJa-OV-OFa" firstAttribute="leading" secondItem="hBQ-g2-Yp3" secondAttribute="leading" constant="10" id="ICp-fd-OYz"/>
+                                                <constraint firstItem="mJa-OV-OFa" firstAttribute="top" secondItem="iJb-z1-gby" secondAttribute="bottom" constant="10" id="UcL-Jx-Hqa"/>
+                                                <constraint firstAttribute="bottom" secondItem="mJa-OV-OFa" secondAttribute="bottom" constant="10" id="ZSW-a0-mZD"/>
+                                                <constraint firstItem="iJb-z1-gby" firstAttribute="top" secondItem="hBQ-g2-Yp3" secondAttribute="top" constant="5" id="bop-Sa-H5Q"/>
+                                                <constraint firstAttribute="trailing" secondItem="mJa-OV-OFa" secondAttribute="trailing" constant="10" id="kYt-7g-q3R"/>
+                                                <constraint firstAttribute="trailing" secondItem="iJb-z1-gby" secondAttribute="trailing" constant="5" id="mhZ-2S-wxs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foodImage" destination="iJb-z1-gby" id="f3E-4v-Rli"/>
+                                            <outlet property="titleLabel" destination="mJa-OV-OFa" id="agG-G4-frY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KL2-AD-Jip" id="8te-53-v8a"/>
+                                    <outlet property="delegate" destination="KL2-AD-Jip" id="5HU-ZZ-eLN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tae-qB-aUG" firstAttribute="trailing" secondItem="e5A-Ly-uOa" secondAttribute="trailing" id="3Hd-oh-zbb"/>
+                            <constraint firstItem="wTZ-JA-tFi" firstAttribute="leading" secondItem="e5A-Ly-uOa" secondAttribute="leading" constant="5" id="7CU-Ra-udx"/>
+                            <constraint firstItem="tae-qB-aUG" firstAttribute="leading" secondItem="e5A-Ly-uOa" secondAttribute="leading" id="Dxj-LU-MmA"/>
+                            <constraint firstItem="e5A-Ly-uOa" firstAttribute="trailing" secondItem="wTZ-JA-tFi" secondAttribute="trailing" constant="5" id="WEs-fF-V0A"/>
+                            <constraint firstItem="tae-qB-aUG" firstAttribute="top" secondItem="wTZ-JA-tFi" secondAttribute="bottom" constant="8" id="rmH-Ff-YFN"/>
+                            <constraint firstItem="tae-qB-aUG" firstAttribute="bottom" secondItem="e5A-Ly-uOa" secondAttribute="bottom" id="tWc-ws-pVV"/>
+                            <constraint firstItem="wTZ-JA-tFi" firstAttribute="top" secondItem="e5A-Ly-uOa" secondAttribute="top" constant="10" id="zih-oK-37U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e5A-Ly-uOa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Diet" image="diet" id="EWp-9K-XNZ"/>
+                    <connections>
+                        <outlet property="segmentControl" destination="wTZ-JA-tFi" id="e9G-eD-x3C"/>
+                        <outlet property="tableView" destination="tae-qB-aUG" id="n7f-h3-odG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhL-3K-4Tv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-800.79999999999995" y="743.47826086956525"/>
         </scene>
         <!--Profile & BMI-->
         <scene sceneID="Fq7-mI-NcR">
@@ -1040,7 +1136,7 @@ We strongly recommend to warm up before exercise for some time. We are not respo
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0V-oT-GJf" customClass="LGButton" customModule="LGButton">
-                                                    <rect key="frame" x="56" y="2.5" width="263" height="60"/>
+                                                    <rect key="frame" x="20" y="2.5" width="335" height="60"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="DlI-MB-Vnv"/>
@@ -1079,7 +1175,9 @@ We strongly recommend to warm up before exercise for some time. We are not respo
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="w0V-oT-GJf" firstAttribute="centerX" secondItem="9Ik-v0-uAG" secondAttribute="centerX" id="Ayq-T2-vKa"/>
+                                                <constraint firstItem="w0V-oT-GJf" firstAttribute="leading" secondItem="9Ik-v0-uAG" secondAttribute="leading" constant="20" id="IRP-HZ-Xer"/>
                                                 <constraint firstItem="w0V-oT-GJf" firstAttribute="centerY" secondItem="9Ik-v0-uAG" secondAttribute="centerY" id="Na5-ml-8Ji"/>
+                                                <constraint firstAttribute="trailing" secondItem="w0V-oT-GJf" secondAttribute="trailing" constant="20" id="aga-Q7-exk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1125,11 +1223,12 @@ We strongly recommend to warm up before exercise for some time. We are not respo
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFx-H6-7fM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-638" y="775"/>
+            <point key="canvasLocation" x="-23" y="1176"/>
         </scene>
     </scenes>
     <resources>
         <image name="cross" width="75" height="75"/>
+        <image name="diet" width="60" height="60"/>
         <image name="exercises" width="60" height="60"/>
         <image name="finish" width="720" height="1280"/>
         <image name="heart" width="60" height="60"/>

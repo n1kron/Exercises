@@ -11,8 +11,6 @@ import UIKit
 class InformationViewController: UIViewController {
     @IBOutlet weak var infoTextView: UITextView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

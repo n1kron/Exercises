@@ -23,11 +23,7 @@ class SettingsViewController: UIViewController {
         if #available( iOS 10.3,*){
             SKStoreReviewController.requestReview()
         } else {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/30-days-fitness/id1437295755?l=ru&ls=1&mt=8")!, options: [:], completionHandler: nil)
-            } else {
-                // Fallback on earlier versions?
-            }
+            UIApplication.shared.open(URL(string: "https://itunes.apple.com/us/app/30-days-fitness/id1437295755?l=ru&ls=1&mt=8")!, options: [:], completionHandler: nil)
         }
     }
     

@@ -33,3 +33,13 @@ class ExercisesCollectionViewCell: UICollectionViewCell {
 
     }
 }
+
+class DietTableViewCell: UITableViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var foodImage: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        foodImage.layer.cornerRadius = 10.0
+    }
+}

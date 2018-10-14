@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29856924754D97BF01704C41 /* Pods_Exercises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8120E44871E1D315F1D81915 /* Pods_Exercises.framework */; };
+		992477E62171FD1E00E67553 /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992477E52171FD1E00E67553 /* DietViewController.swift */; };
 		99257BCB215A8AE6003D69B3 /* LGButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99257BCA215A8AE6003D69B3 /* LGButton.framework */; };
 		99257BCD215AAA7C003D69B3 /* SRCountdownTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99257BCC215AAA7C003D69B3 /* SRCountdownTimer.framework */; };
 		992D8A97214FA4320059628E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992D8A96214FA4320059628E /* AppDelegate.swift */; };
@@ -82,6 +83,7 @@
 		0F835CF7D0DFF3212C8F465E /* Pods-Exercises.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercises.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exercises/Pods-Exercises.debug.xcconfig"; sourceTree = "<group>"; };
 		4A547F03107EAE3CE76C60A1 /* Pods-Exercises.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercises.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exercises/Pods-Exercises.release.xcconfig"; sourceTree = "<group>"; };
 		8120E44871E1D315F1D81915 /* Pods_Exercises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exercises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		992477E52171FD1E00E67553 /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
 		99257BCA215A8AE6003D69B3 /* LGButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LGButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99257BCC215AAA7C003D69B3 /* SRCountdownTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SRCountdownTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		992D8A93214FA4320059628E /* Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercises.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +284,7 @@
 				99FE581E216783B1006CA0E9 /* ProfileViewController.swift */,
 				992D8AD3214FED020059628E /* DetailViewController.swift */,
 				99FE58142163D5B4006CA0E9 /* InformationViewController.swift */,
+				992477E52171FD1E00E67553 /* DietViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				99FE582721678BDB006CA0E9 /* HKBloodType+StringRepresentation.swift in Sources */,
 				99AF52B0215269D5000E798E /* Consts.swift in Sources */,
 				992D8ACA214FCE4B0059628E /* Utiles.swift in Sources */,
+				992477E62171FD1E00E67553 /* DietViewController.swift in Sources */,
 				992D8AD4214FED020059628E /* DetailViewController.swift in Sources */,
 				992D8AD2214FD3120059628E /* Cells.swift in Sources */,
 				99AF52A921511E22000E798E /* StartView.swift in Sources */,
