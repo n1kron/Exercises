@@ -1,20 +1,71 @@
 PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FacebookCore (0.4.0):
+    - Bolts (~> 1.9)
+    - FBSDKCoreKit (~> 4.36)
+  - FacebookLogin (0.4.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.4)
+    - FBSDKCoreKit (~> 4.36)
+    - FBSDKLoginKit (~> 4.36)
+  - FacebookShare (0.4.0):
+    - Bolts (~> 1.9)
+    - FacebookCore (~> 0.4)
+    - FBSDKCoreKit (~> 4.36)
+    - FBSDKShareKit (~> 4.36)
+  - FBSDKCoreKit (4.37.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.37.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.37.0):
+    - FBSDKCoreKit (~> 4.37.0)
   - LGButton (1.0.5)
   - SRCountdownTimer (1.1)
+  - SwiftyJSON (4.2.0)
+  - YandexMobileMetrica/Dynamic (3.3.0)
 
 DEPENDENCIES:
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
+  - FBSDKLoginKit
   - LGButton
   - SRCountdownTimer
+  - SwiftyJSON
+  - YandexMobileMetrica/Dynamic (= 3.3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Bolts
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
     - LGButton
     - SRCountdownTimer
+    - SwiftyJSON
+    - YandexMobileMetrica
 
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FacebookCore: 770e57cfe250a4de4458b682191c0ff062dee247
+  FacebookLogin: eb0f2251aca835a94d70a5f7e580edc46d1e1603
+  FacebookShare: ec48492ba748f971c6a13661963f7aae38140111
+  FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
+  FBSDKLoginKit: 2f7249686d1e30ce8a5ef5400eedf50b3e3df332
+  FBSDKShareKit: 52e0083222c38e930eb6878007478326599195c3
   LGButton: 707ce916eb80b73a6c4688df34bee11adbafb663
   SRCountdownTimer: 9c92e444b5403c92f01dd6610299b8c634bc8562
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  YandexMobileMetrica: 415e4e8a7a23121a3d086958a655f444dd340edb
 
-PODFILE CHECKSUM: c3b292d5583ec780d7e3307b9b81f5c4ed2bddee
+PODFILE CHECKSUM: 1ab982eeebc7cb2ee88672af9ed2f2ad9a89d352
 
 COCOAPODS: 1.5.3

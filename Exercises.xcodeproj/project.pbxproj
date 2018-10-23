@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD00EEB217A06D5005B9B32 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD00EE7217A06D5005B9B32 /* Analytics.swift */; };
+		1BD00EEC217A06D5005B9B32 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD00EE8217A06D5005B9B32 /* SubscriptionManager.swift */; };
+		1BD00EED217A06D5005B9B32 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD00EE9217A06D5005B9B32 /* OnboardingViewController.swift */; };
+		1BD00EEE217A06D5005B9B32 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD00EEA217A06D5005B9B32 /* SwiftLoader.swift */; };
 		29856924754D97BF01704C41 /* Pods_Exercises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8120E44871E1D315F1D81915 /* Pods_Exercises.framework */; };
 		992477E62171FD1E00E67553 /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992477E52171FD1E00E67553 /* DietViewController.swift */; };
 		99257BCB215A8AE6003D69B3 /* LGButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99257BCA215A8AE6003D69B3 /* LGButton.framework */; };
@@ -81,6 +85,10 @@
 
 /* Begin PBXFileReference section */
 		0F835CF7D0DFF3212C8F465E /* Pods-Exercises.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercises.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exercises/Pods-Exercises.debug.xcconfig"; sourceTree = "<group>"; };
+		1BD00EE7217A06D5005B9B32 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		1BD00EE8217A06D5005B9B32 /* SubscriptionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		1BD00EE9217A06D5005B9B32 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1BD00EEA217A06D5005B9B32 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
 		4A547F03107EAE3CE76C60A1 /* Pods-Exercises.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exercises.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exercises/Pods-Exercises.release.xcconfig"; sourceTree = "<group>"; };
 		8120E44871E1D315F1D81915 /* Pods_Exercises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exercises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		992477E52171FD1E00E67553 /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +181,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BD00EE6217A06BB005B9B32 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				1BD00EE7217A06D5005B9B32 /* Analytics.swift */,
+				1BD00EE9217A06D5005B9B32 /* OnboardingViewController.swift */,
+				1BD00EE8217A06D5005B9B32 /* SubscriptionManager.swift */,
+				1BD00EEA217A06D5005B9B32 /* SwiftLoader.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
 		9801B21FCE3966A52FE27F7A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +229,7 @@
 				9960038F215E9380006816BC /* Exercises.entitlements */,
 				992D8A96214FA4320059628E /* AppDelegate.swift */,
 				992D8AA2214FA4350059628E /* Info.plist */,
+				1BD00EE6217A06BB005B9B32 /* Subscription */,
 				992D8AC6214FA4ED0059628E /* Services */,
 				992D8AC4214FA4D30059628E /* UI */,
 				992D8AC5214FA4DB0059628E /* Resources */,
@@ -560,13 +580,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Exercises/Pods-Exercises-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/LGButton/LGButton.framework",
 				"${BUILT_PRODUCTS_DIR}/SRCountdownTimer/SRCountdownTimer.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SRCountdownTimer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -602,8 +640,10 @@
 				99FE582321678B48006CA0E9 /* ProfileDataStore.swift in Sources */,
 				99FE582621678BDB006CA0E9 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
 				99AF52AB21525A35000E798E /* Gifs.swift in Sources */,
+				1BD00EED217A06D5005B9B32 /* OnboardingViewController.swift in Sources */,
 				99FE58152163D5B4006CA0E9 /* InformationViewController.swift in Sources */,
 				99FE582721678BDB006CA0E9 /* HKBloodType+StringRepresentation.swift in Sources */,
+				1BD00EEB217A06D5005B9B32 /* Analytics.swift in Sources */,
 				99AF52B0215269D5000E798E /* Consts.swift in Sources */,
 				992D8ACA214FCE4B0059628E /* Utiles.swift in Sources */,
 				992477E62171FD1E00E67553 /* DietViewController.swift in Sources */,
@@ -613,8 +653,10 @@
 				992D8A97214FA4320059628E /* AppDelegate.swift in Sources */,
 				992D8ACC214FD21C0059628E /* ExercisesViewController.swift in Sources */,
 				99FE581C21663304006CA0E9 /* HealthKitSetupAssistant.swift in Sources */,
+				1BD00EEC217A06D5005B9B32 /* SubscriptionManager.swift in Sources */,
 				99FE581F216783B1006CA0E9 /* ProfileViewController.swift in Sources */,
 				99AF52F021542150000E798E /* FinishView.swift in Sources */,
+				1BD00EEE217A06D5005B9B32 /* SwiftLoader.swift in Sources */,
 				992D8ACE214FD2420059628E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,7 +833,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Exercises/Exercises.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
+				DEVELOPMENT_TEAM = XF46465NJX;
 				INFOPLIST_FILE = Exercises/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -812,7 +854,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Exercises/Exercises.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
+				DEVELOPMENT_TEAM = XF46465NJX;
 				INFOPLIST_FILE = Exercises/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

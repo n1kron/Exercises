@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qd-SN-rIM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pB2-Xs-925">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -666,7 +666,7 @@ We strongly recommend to warm up before exercise for some time. We are not respo
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fl2-eQ-VoB">
-                                <rect key="frame" x="15" y="35" width="46.5" height="75"/>
+                                <rect key="frame" x="15" y="35" width="33" height="33"/>
                                 <state key="normal" image="cross"/>
                                 <connections>
                                     <action selector="closeAction:" destination="koQ-x3-ocY" eventType="touchUpInside" id="6sZ-BJ-32V"/>
@@ -1225,15 +1225,81 @@ We strongly recommend to warm up before exercise for some time. We are not respo
             </objects>
             <point key="canvasLocation" x="-23" y="1176"/>
         </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s6a-SM-LVn">
+            <objects>
+                <viewController id="pB2-Xs-925" customClass="OnboardingViewController" customModule="Exercises" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bUw-YT-Dpa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="cqe-U7-Cv8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000001192092896" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="9P9-3e-rox">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.069777125630000006" blue="0.069777125630000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hbK-7l-3w3" appends="YES" id="PlT-Kz-eiR"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBT-E9-EFg">
+                                <rect key="frame" x="182" y="141" width="42" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cqe-U7-Cv8" firstAttribute="leading" secondItem="4Qf-ZR-AoX" secondAttribute="leading" id="8J8-48-u9H"/>
+                            <constraint firstAttribute="trailing" secondItem="9P9-3e-rox" secondAttribute="trailing" id="8fM-xI-z6r"/>
+                            <constraint firstAttribute="bottom" secondItem="9P9-3e-rox" secondAttribute="bottom" id="GO4-bX-8aQ"/>
+                            <constraint firstItem="cqe-U7-Cv8" firstAttribute="trailing" secondItem="4Qf-ZR-AoX" secondAttribute="trailing" id="LFq-ON-bV8"/>
+                            <constraint firstItem="9P9-3e-rox" firstAttribute="leading" secondItem="bUw-YT-Dpa" secondAttribute="leading" id="SoN-js-dTX"/>
+                            <constraint firstItem="9P9-3e-rox" firstAttribute="height" secondItem="bUw-YT-Dpa" secondAttribute="height" multiplier="1:2" id="Vxs-hY-z2F"/>
+                            <constraint firstItem="cqe-U7-Cv8" firstAttribute="top" secondItem="bUw-YT-Dpa" secondAttribute="top" id="YA0-hQ-Ugk"/>
+                            <constraint firstAttribute="bottom" secondItem="cqe-U7-Cv8" secondAttribute="bottom" id="b4b-GB-rMx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Qf-ZR-AoX"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mRG-OF-2oX" appends="YES" id="IUK-ce-3Dm"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="cqe-U7-Cv8" id="MSE-yc-sVu"/>
+                        <outlet property="contentScrollView" destination="9P9-3e-rox" id="a57-1e-Z5R"/>
+                        <segue destination="9qd-SN-rIM" kind="show" identifier="GoApp" id="xJu-P0-JZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4RL-rJ-2yd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mRG-OF-2oX">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="pB2-Xs-925" id="J7D-su-1nS"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hbK-7l-3w3">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="pB2-Xs-925" id="wDV-6F-w0i"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-607" y="34"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="cross" width="75" height="75"/>
-        <image name="diet" width="60" height="60"/>
-        <image name="exercises" width="60" height="60"/>
-        <image name="finish" width="720" height="1280"/>
-        <image name="heart" width="60" height="60"/>
-        <image name="info" width="60" height="60"/>
-        <image name="logo" width="500" height="500"/>
-        <image name="settings" width="60" height="60"/>
+        <image name="bg" width="200" height="341"/>
+        <image name="cross" width="33" height="33"/>
+        <image name="diet" width="26" height="26"/>
+        <image name="exercises" width="26" height="26"/>
+        <image name="finish" width="240" height="426"/>
+        <image name="heart" width="26" height="26"/>
+        <image name="info" width="26" height="26"/>
+        <image name="logo" width="166" height="166"/>
+        <image name="settings" width="26" height="26"/>
     </resources>
 </document>
